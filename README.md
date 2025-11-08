@@ -1,26 +1,27 @@
 # 🎶 Music Recommendation App
 
-This is a **music recommendation system** built with Python and Streamlit.  
-It suggests songs similar to the one you choose, with optional filtering by artist.
+A **music recommendation system** built with Python and Streamlit that suggests songs similar to your selection, with optional filtering by artist.
 
 ---
 
 ## 🚀 Features
 
-- Select any song from the dataset.
-- Optional filter to get recommendations from a specific artist.
-- Top-N recommendations adjustable with a slider.
-- Modern, responsive UI with Streamlit.
+- Browse and select from thousands of songs in the dataset
+- Get personalized song recommendations based on similarity
+- **Filter recommendations by specific artist** (optional)
+- **Adjust number of recommendations** with an interactive slider (1-20 songs)
+- Modern, gradient-styled UI with responsive design
 
 ---
 
 ## 🧰 Technologies Used
 
 - **Python 3**
-- **Streamlit** for the web app interface
-- **Pandas, NLTK** for data preprocessing
-- **Scikit-learn** for TF-IDF vectorization and cosine similarity
-- **Joblib** for saving preprocessed data
+- **Streamlit** - Interactive web app interface
+- **Pandas** - Data manipulation and analysis
+- **NLTK** - Natural language processing for text preprocessing
+- **Scikit-learn** - TF-IDF vectorization and cosine similarity
+- **Joblib** - Model and data serialization
 
 ---
 
@@ -29,22 +30,48 @@ It suggests songs similar to the one you choose, with optional filtering by arti
 This project uses the **Spotify Million Songs Dataset**, publicly available on Kaggle:  
 [Spotify Million Songs Dataset](https://www.kaggle.com/datasets/notshrirang/spotify-million-song-dataset)
 
-> ⚠️ The dataset CSV file is **not included** in this repo due to its large size.  
-> Please download it from Kaggle and place it in `src/spotify_millsongdata.csv` before running the app.
-
----
-
-## 📝 Credits
-
-- Inspired by [Siddhardhan's YouTube tutorial](https://www.youtube.com/watch?v=ic1tlRD0VoE&t=454s).  
-- Dataset from Kaggle (link above).
+> ⚠️ **Important:** The dataset CSV file is **not included** in this repository due to its large size.  
+> Please download it from Kaggle and place it at `src/spotify_millsongdata.csv` before running the app.
 
 ---
 
 ## 🏃 How to Run
 
+1. **Clone the repository:**
 ```bash
-git clone https://github.com/MalekChihi/Music_Recommendation_App.git
-cd Music_Recommendation_App/src
-pip install -r requirements.txt
-streamlit run main.py
+   git clone https://github.com/MalekChihi/Music_Recommendation_App.git
+   cd Music_Recommendation_App
+```
+
+2. **Download the dataset:**
+   - Get the dataset from [Kaggle](https://www.kaggle.com/datasets/notshrirang/spotify-million-song-dataset)
+   - Place `spotify_millsongdata.csv` in the `src/` folder
+
+3. **Install dependencies:**
+```bash
+   pip install -r requirements.txt
+```
+
+4. **Run the app:**
+```bash
+   cd src
+   streamlit run main.py
+```
+
+5. **Open your browser** and navigate to the local URL shown in the terminal (usually `http://localhost:8501`)
+
+---
+
+## 📝 Credits
+
+- Inspired by [Siddhardhan's YouTube tutorial](https://www.youtube.com/watch?v=ic1tlRD0VoE&t=454s)
+- Dataset from [Kaggle - Spotify Million Songs Dataset](https://www.kaggle.com/datasets/notshrirang/spotify-million-song-dataset)
+
+---
+
+
+
+## 👤 Author
+
+**Malek Chihi**  
+GitHub: [@MalekChihi](https://github.com/MalekChihi)
